@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../main.css" />
+    <link rel="stylesheet" href="./css/personalData.css" />
+    <title>Curriculo</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <nav>
+          <div class="icon">
+            <div class="logo logo-yellow"></div>
+            <div class="logo logo-blue"></div>
+            <div class="logo logo-gray"></div>
+            <div class="logo logo-default"></div>
+          </div>
+          <div class="links">
+            <a href="../main.html" class="page-link">Sair</a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="personal-data">
+        <form>
+          <h2 class="form-title">Informações pessoais</h2>
+          <div class="personal-data-form">
+            <div class="input-form">
+              <input type="text" class="name" />
+              <span class="input-label"> Nome </span>
+            </div>
+            <div class="input-form">
+              <input type="email" class="endereco" />
+              <span class="input-label"> Email </span>
+            </div>
+            <div class="input-form">
+              <input type="number" class="tel" />
+              <span class="input-label"> Telefone </span>
+            </div>
+          </div>
+          <div class="expreriencies-data-form remove">
+            <div class="input-form">
+              <input type="text" class="entidade" />
+              <span class="input-label"> Entidade </span>
+            </div>
+            <div class="input-form">
+              <input type="text" class="atividade" />
+              <span class="input-label"> Atividade </span>
+            </div>
+            <div class="input-form period">
+              <span class="period-label"> Período </span>
+              <div>
+                <input type="date" class="inicial period-input" />
+                <span class="date-span">até</span>
+                <input type="date" class="final period-input" />
+              </div>
+            </div>
+          </div>
+          <div class="graduation-data-form remove">
+            <div class="input-form">
+              <input type="text" class="instituicao" />
+              <span class="input-label"> Instituição </span>
+            </div>
+            <div class="input-form">
+              <input type="text" class="curso" />
+              <span class="input-label"> Curso </span>
+            </div>
+            <div class="input-form">
+              <input type="date" class="conclusao" />
+              <span class="input-label"> Conclusão </span>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="form-button back-button button-hide">Voltar</button>
+            <button class="form-button clear-button">Limpar</button>
+            <button class="form-button next-button">Avançar</button>
+            <button class="form-button submit-button button-hide">
+              Concluído
+            </button>
+          </div>
+        </form>
+        <div class="personal-data-presentation">
+          <div class="avatar">
+            <img src="../avatar.svg" alt="" class="profile-avatar" />
+          </div>
+          <div class="datas">
+            <div class="inline">
+              <div>
+                <h3 class="data-title">Nome</h3>
+                <p class="data-content data-nome">
+                  João Victor de Lima Oliveira
+                </p>
+              </div>
+              <div>
+                <h3 class="data-title">Telefone</h3>
+                <p class="data-content data-telefone">(35) 9 9194-9742</p>
+              </div>
+            </div>
+
+            <h3 class="data-title">Email</h3>
+            <p class="data-content data-endereco">
+              Rua Augusto Zini, 59, Village São Luiz, Poços de Caldas
+            </p>
+
+            <div class="inline">
+              <div>
+                <h3 class="data-title">Entidade</h3>
+                <p class="data-content data-entidade">Gplus Sistemas</p>
+              </div>
+              <div>
+                <h3 class="data-title">Atividade</h3>
+                <p class="data-content data-atividade">
+                  Desenvolvedor Front-end Jr
+                </p>
+              </div>
+            </div>
+
+            <h3 class="data-title">Periodo</h3>
+            <p class="data-content data-expPeriod">19/10/1212 à 12/12/1231</p>
+
+            <div class="inline">
+              <div>
+                <h3 class="data-title">Instituição</h3>
+                <p class="data-content data-instituicao">IFSMG</p>
+              </div>
+              <div>
+                <h3 class="data-title">Curso</h3>
+                <p class="data-content data-curso">Téc em informática</p>
+              </div>
+            </div>
+
+            <h3 class="data-title">Conclusão</h3>
+            <p class="data-content data-conclusao">xx/xz/zzz</p>
+          </div>
+          <div class="action-buttons">
+            <button class="editar action-button">Editar</button>
+            <button class="imprimir action-button" onclick="resumePrint()">
+              Imprimir
+            </button>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <script src="./scripts/stepForm.js"></script>
+    <script src="./scripts/actions.js"></script>
+    <script src="./scripts/highContrast.js"></script>
+  </body>
+</html>

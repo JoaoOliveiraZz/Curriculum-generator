@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Formulario</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="icon">
+          <div class="logo logo-yellow"></div>
+          <div class="logo logo-gray"></div>
+          <div class="logo logo-blue"></div>
+          <div class="logo logo-default"></div>
+        </div>
+        <div class="links">
+          <a href="./curriculo/dadospessoais.html" class="page-link">Sobre</a>
+          <a href="https://github.com/JoaoOliveiraZz" class="page-link"
+            >GitHub</a
+          >
+          <a href="../main.html" class="page-link">Sair</a>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <h2>Login</h2>
+      <form>
+        <div>
+          <div class="input-form">
+            <input type="text" class="name" />
+            <span> Usuário </span>
+          </div>
+          <div class="input-form">
+            <input type="password" class="senha" />
+            <span> Senha </span>
+          </div>
+        </div>
+        <div class="buttons">
+          <button class="login-button form-button">Entrar</button>
+          <button class="clean-button form-button">Limpar</button>
+        </div>
+      </form>
+    </section>
+
+    <script>
+      const nome = document.querySelector(".name");
+      const senha = document.querySelector(".senha");
+      const form = document.querySelector("form");
+
+      nome.addEventListener("change", () => {
+        if (nome.value !== "") {
+          nome.classList.add("input-validated");
+        } else {
+          nome.classList.remove("input-validated");
+        }
+      });
+      senha.addEventListener("change", () => {
+        if (senha.value !== "") {
+          senha.classList.add("input-validated");
+        } else {
+          nome.classList.remove("input-validated");
+        }
+      });
+
+      const loginButton = document.querySelector(".login-button");
+      const cleanButton = document.querySelector(".clean-button");
+
+      cleanButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        form.reset();
+        nome.classList.remove("input-validated");
+        senha.classList.remove("input-validated");
+      });
+
+      loginButton.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (nome.value === "JoaoVictor" && senha.value === "123456") {
+          window.location.href = "../curriculo/dadospessoais.html";
+        } else {
+          alert("Usuario e senha incorretos");
+        }
+      });
+    </script>
+  </body>
+</html>

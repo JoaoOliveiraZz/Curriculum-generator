@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="./curriculo/css/marks.css" />
+    <title>Main</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <nav>
+          <div class="icon">
+            <div class="logo logo-yellow"></div>
+            <div class="logo logo-gray"></div>
+            <div class="logo logo-blue"></div>
+            <div class="logo logo-default"></div>
+          </div>
+          <div class="links">
+            <a href="./curriculo/dadospessoais.html" class="page-link">Sobre</a>
+            <a href="https://github.com/JoaoOliveiraZz" class="page-link"
+              >GitHub</a
+            >
+            <a href="./curriculo/formacao.html" class="page-link">Login</a>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <div class="image">
+          <img src="./background.svg" alt="" />
+        </div>
+        <div class="description">
+          <h1>Curriculum Builder</h1>
+          <p>
+            No Curriculum Builder você pode criar totalmente
+            <span class="text-mark"> grátis </span>o seu próprio currículo de
+            forma totalmente<span class="text-mark"> PROFISSIONAL.</span>
+          </p>
+          <button class="cta">Saiba mais</button>
+        </div>
+      </main>
+    </section>
+
+    <script>
+      alert(
+        "Dica: Clique nos ícones do canto superior esquerdo para alterar o tema!!"
+      );
+
+      const ctaButton = document.querySelector(".cta");
+      ctaButton.addEventListener("click", () => {
+        window.location.href = "./login/login.html";
+      });
+    </script>
+    <script src="./curriculo/scripts/highContrast.js"></script>
+  </body>
+</html>
